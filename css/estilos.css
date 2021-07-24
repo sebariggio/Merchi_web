@@ -1,0 +1,780 @@
+/* INDEX */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252, 249, 251);
+}
+
+
+/* header */
+
+header {
+    font-weight: 500;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 30px;
+}
+
+.medidas_logo {
+    width: 300px;
+    height: 300px;
+}
+
+.logo_inicio {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* banner inicio */
+
+.banner-inicio {
+    z-index: -1;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* navegador */
+
+
+/* NAVBAR BS */
+
+
+/* NAVBAR BS */
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #eabebe;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #eabebe;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f77c72;
+}
+
+.color-submenu li a {
+    color: #fffafa;
+}
+
+.color-submenu li a:hover {
+    color: #f77c72;
+}
+
+
+/* navegador */
+
+.navegacion {
+    width: 100%;
+    height: 100px;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.menu li {
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li a {
+    padding: 0px 10px;
+    color: #eabebe;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #f77c72;
+    transition: all 0.3s;
+}
+
+.submenu {
+    z-index: 9;
+    position: center;
+    padding-left: 0px;
+    position: absolute;
+    background: #eabebe;
+    opacity: 20%;
+    width: auto;
+    visibility: hidden;
+    transition: opacity 2.5s;
+    border-radius: 10px;
+}
+
+.submenu li a {
+    display: block;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 100%;
+}
+
+.color-submenu {
+    background: #eabebe;
+}
+
+.color-submenu li a {
+    color: #f77c72;
+}
+
+.color-menu {
+    color: #f77c72;
+}
+
+
+/* carrousel iamgnes */
+
+.carrousel {
+    width: 100%;
+}
+
+.imagenes_carrousel {
+    max-width: 100%;
+}
+
+.carrousel_video {
+    margin-top: 100px;
+}
+
+
+/* primera seccion */
+
+.primera_seccion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.primera_seccion {
+    width: 100%;
+}
+
+.titulo_principal {
+    padding-top: 100px;
+    padding-left: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #eabebe;
+    font-size: 80px;
+    line-height: 100%;
+}
+
+.parrafo_principal {
+    width: 100%;
+    padding: 50px;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    text-align: left;
+    font-size: 40px;
+    background-color: #eabebe;
+    color: rgb(255, 255, 255);
+    letter-spacing: -1px;
+}
+
+.resaltado {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+/* segunda seccion productos para elegir */
+
+.section_imagenesvector {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+section {
+    width: 100%;
+}
+
+.imagen_vector {
+    width: 350px;
+    padding: 30px;
+    margin: 10px 5px;
+}
+
+
+/* formulario */
+
+.section_formulario {
+    width: 100%;
+    background: url(/imagenes/FONDO\ QUIERO-01.svg);
+    height: 499px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.formulario_caja {
+    padding-top: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.section_formulario {
+    margin-top: 70px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.celdas form input,
+.contacto form textarea {
+    height: 25px;
+    font-family: "Poppins", sans-serif;
+    margin: 5px 0;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.enviar_limpiar {
+    padding-top: 20px;
+}
+
+
+/* mapa */
+
+.map iframe {
+    filter: grayscale(100%);
+    width: 100vw !important;
+}
+
+
+/* footer */
+
+.fondo_gradient_footer {
+    background-image: linear-gradient( to bottom left, #fad8d8, rgb(255, 255, 255))
+}
+
+footer {
+    width: 100%;
+    ;
+}
+
+.footer_redes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_redes li a {
+    padding: 10px;
+    list-style: none;
+}
+
+
+/* PRODUCTOS */
+
+.imagenes_vidrera {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.galeria_vidriera {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.titulo_cookies {
+    margin-top: 40px;
+}
+
+.titulos_productos {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #eabebe;
+    text-align: center;
+}
+
+.titulo_cookies {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #eabebe;
+    text-align: center;
+}
+
+
+/* NOSOTROS */
+
+.fondo_nosotros {
+    background: url(/imagenes/fondo_nosotros.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+.fondo_parrafo {
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #e4c4ce;
+    opacity: 70%;
+}
+
+.parrafo_nosotros {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+.merchi_parrafo {
+    font-weight: 600;
+}
+
+
+/* RECETAS */
+
+.flex_pancakes {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex_pancakes {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.TituloGeneralRecetas {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #eabebe;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.titulos_pancakes {
+    margin-bottom: 30px;
+    background: #6d96c6;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    color: #eabebe;
+    text-align: left;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.video_pancakes {
+    width: 100%;
+    height: 300px;
+}
+
+.fondo_recetaPancakes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f77c72;
+}
+
+.titulo_receta1 {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.receta_1 {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* envio exitoso*/
+
+.logo_envio_exitoso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.logo_envio_exitoso h1 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.logo_envio_exitoso_posicion {
+    margin: auto;
+    text-align: center;
+}
+
+.logo_envio_exitoso_medidas {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* media queries mobile HOME */
+
+@media only screen and (max-width: 768px) {
+    .medidas_logo {
+        width: 150px;
+        height: 150px;
+    }
+    .menu {
+        flex-flow: wrap;
+    }
+    .menu li {
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .menu li a {
+        font-size: 16px;
+        color: #eabebe;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+    }
+    .titulo_principal {
+        font-size: 50px;
+        padding: 5px;
+    }
+    .parrafo_principal {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+    }
+    #hacemosCosas {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-items: end;
+    }
+    .navegacion {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .section_imagenesvector {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .footer_redes {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .medidas_logoredes {
+        width: 150px;
+        height: 150px;
+    }
+    .banner-inicio {
+        padding: 0px;
+    }
+    .medidas_logoredes {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        display: none;
+    }
+    /* media queries mobile nosotros */
+    .menu_nosotros {
+        flex-flow: wrap;
+    }
+    .menu_nosotros li {
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .menu_nosotros li a {
+        font-size: 16px;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+    }
+    .parrafo_nosotros {
+        text-align: center;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    /* media queries mobile PRODUCTOS */
+    .titulo_cookies {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .titulos_productos {
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        color: #eabebe;
+        text-align: center;
+    }
+    .imagenes_vidrera {
+        width: 100%;
+        padding: 1px;
+    }
+    /* media queries mobile RECETAS */
+    .TituloGeneralRecetas {
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        color: #eabebe;
+        text-align: center;
+    }
+    .titulos_pancakes {
+        background: #6d96c6;
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        color: #eabebe;
+        text-align: left;
+    }
+    .flex_pancakes {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .video_pancakes {
+        width: 100%;
+    }
+    .fondo_recetaPancakes {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        width: 100%;
+        background: #f77c72;
+    }
+}
+
+
+/* animacion seccion productos */
+
+.producto {
+    position: relative;
+    transition: all .2s ease-in;
+}
+
+.producto-info {
+    color: #f77c72;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.producto-info p {
+    font-size: 16px;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto:hover .producto-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.boton_quiero {
+    border-radius: 10px;
+    color: white;
+    width: 70px;
+    height: 40px;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    margin: px;
+}
+
+
+/* MEDIA BOTON IMAGENES PRODUCTS */
+
+@media only screen and (max-width: 500px) {
+    .producto {
+        position: relative;
+        transition: all .2s ease-in;
+    }
+    .producto-info {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s ease-in;
+        text-align: center;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .producto-info p {
+        font-size: 15px;
+    }
+    .producto:hover {
+        transform: scale(1.03);
+    }
+    .producto:hover .producto-info {
+        opacity: 1;
+        visibility: visible;
+    }
+    .boton_quiero {
+        font-size: 10px;
+        border-radius: 5px;
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+        margin: 0 px;
+    }
+}
+
+
+/* animacion seccion vectores home */
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    53%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+        transform: translate3d(0, -30px, 0) scaleY(1.1)
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+        transform: translate3d(0, -15px, 0) scaleY(1.05)
+    }
+    80% {
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        -webkit-transform: translateZ(0) scaleY(.95);
+        transform: translateZ(0) scaleY(.95)
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+        transform: translate3d(0, -4px, 0) scaleY(1.02)
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    53%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+        transform: translate3d(0, -30px, 0) scaleY(1.1)
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+        -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+        transform: translate3d(0, -15px, 0) scaleY(1.05)
+    }
+    80% {
+        -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        -webkit-transform: translateZ(0) scaleY(.95);
+        transform: translateZ(0) scaleY(.95)
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+        transform: translate3d(0, -4px, 0) scaleY(1.02)
+    }
+}
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.animate__bounce_vector:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
