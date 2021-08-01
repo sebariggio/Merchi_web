@@ -210,44 +210,6 @@
             margin: 10px 5px;
         }
         /* formulario */
-        
-        .section_formulario {
-            width: 100%;
-            background: url(/imagenes/FONDO\ QUIERO-01.svg);
-            height: 499px;
-            background-position: center center;
-            background-size: cover;
-        }
-        
-        .formulario_caja {
-            padding-top: 40px;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-content: center;
-        }
-        
-        .section_formulario {
-            margin-top: 70px;
-            font-family: "Poppins", sans-serif;
-            color: white;
-            text-align: center;
-        }
-        
-        .celdas form input,
-        .contacto form textarea {
-            height: 25px;
-            font-family: "Poppins", sans-serif;
-            margin: 5px 0;
-            padding: 4px;
-            border: none;
-            border-radius: 5px;
-            border-bottom: 1px solid rgb(0, 0, 0);
-        }
-        
-        .enviar_limpiar {
-            padding-top: 20px;
-        }
         /* mapa */
         
         .map iframe {
@@ -391,6 +353,7 @@
             color: #eabebe;
             text-align: center;
             padding-bottom: 50px;
+            padding-top: 50px;
         }
         
         .titulos_pancakes {
@@ -428,6 +391,51 @@
             color: #ffffff;
             text-align: center;
             padding: 50px;
+        }
+        /* QUIERO*/
+        
+        .section_formulario {
+            width: 100%;
+            background: url(/imagenes/FONDO\ QUIERO-01.svg);
+            height: 499px;
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .formulario_caja {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .section_formulario {
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-align: center;
+        }
+        
+        .celdas form input,
+        .contacto form textarea {
+            height: 25px;
+            font-family: "Poppins", sans-serif;
+            margin: 5px 0;
+            padding: 4px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+        
+        .enviar_limpiar {
+            padding-top: 20px;
+        }
+        
+        .TituloGeneralQuiero {
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            font-size: 60px;
+            color: #eabebe;
+            text-align: center;
         }
         /* envio exitoso*/
         
@@ -543,10 +551,6 @@
                 font-weight: 300;
                 line-height: 20px;
             }
-            .TituloGeneralNostros {
-                font-size: 30px;
-                margin: 0px;
-            }
             /* media queries mobile PRODUCTOS */
             .titulo_cookies {
                 margin-top: 40px;
@@ -592,19 +596,73 @@
                 width: 100%;
                 background: #f77c72;
             }
-            /* animacion seccion productos */
+        }
+        /* galeria productos PRODUCTOS */
+        
+        @media only screen and (max-width: 500px) {
+            .galeria_vidriera {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+        }
+        /* animacion seccion productos */
+        
+        .producto {
+            position: relative;
+            transition: all .2s ease-in;
+        }
+        
+        .producto-info {
+            color: #f77c72;
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s ease-in;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .producto-info p {
+            font-size: 16px;
+        }
+        
+        .producto:hover {
+            transform: scale(1.03);
+        }
+        
+        .producto:hover .producto-info {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .boton_quiero {
+            border-radius: 10px;
+            color: white;
+            width: 70px;
+            height: 40px;
+            background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+            margin: px;
+        }
+        /* MEDIA BOTON IMAGENES PRODUCTS */
+        
+        @media only screen and (max-width: 500px) {
             .producto {
                 position: relative;
                 transition: all .2s ease-in;
             }
             .producto-info {
-                color: #f77c72;
-                font-family: "Poppins", sans-serif;
-                font-weight: 200;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -613,13 +671,12 @@
                 opacity: 0;
                 visibility: hidden;
                 transition: all .2s ease-in;
-                padding: 40px;
                 text-align: center;
-                font-size: 20px;
+                font-size: 10px;
                 cursor: pointer;
             }
             .producto-info p {
-                font-size: 16px;
+                font-size: 15px;
             }
             .producto:hover {
                 transform: scale(1.03);
@@ -629,160 +686,105 @@
                 visibility: visible;
             }
             .boton_quiero {
-                border-radius: 10px;
+                font-size: 10px;
+                border-radius: 5px;
                 color: white;
-                width: 70px;
-                height: 40px;
+                width: 50px;
+                height: 20px;
                 background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-                margin: px;
+                margin: 0 px;
             }
-            /* galeria productos PRODUCTOS */
-            @media only screen and (max-width: 500px) {
-                .galeria_vidriera {
-                    display: flex;
-                    flex-flow: column nowrap;
-                }
+        }
+        /* animacion seccion vectores home */
+        
+         :root {
+            --animate-duration: 1s;
+            --animate-delay: 1s;
+            --animate-repeat: 1
+        }
+        
+        @-webkit-keyframes bounce {
+            0%,
+            20%,
+            53%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
             }
-            /* MEDIA BOTON IMAGENES PRODUCTS */
-            @media only screen and (max-width: 500px) {
-                .producto {
-                    position: relative;
-                    transition: all .2s ease-in;
-                }
-                .producto-info {
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.7);
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all .2s ease-in;
-                    text-align: center;
-                    font-size: 10px;
-                    cursor: pointer;
-                }
-                .producto-info p {
-                    font-size: 15px;
-                }
-                .producto:hover {
-                    transform: scale(1.03);
-                }
-                .producto:hover .producto-info {
-                    opacity: 1;
-                    visibility: visible;
-                }
-                .boton_quiero {
-                    font-size: 10px;
-                    border-radius: 5px;
-                    color: white;
-                    width: 50px;
-                    height: 20px;
-                    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-                    margin: 0 px;
-                }
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+                transform: translate3d(0, -30px, 0) scaleY(1.1)
             }
-            /* MEDIA galeria nosotros */
-            @media (min-width:768px) {
-                .galeria_fotos {
-                    grid-template-columns: repeat(4, 1fr);
-                }
-                .galeria_item:nth-child(3) {
-                    grid-column-start: span 2;
-                }
-                .galeria_item:nth-child(5) {
-                    grid-column-start: span 2;
-                }
-                .galeria_item:nth-child(9) {
-                    grid-column-start: span 3;
-                }
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+                transform: translate3d(0, -15px, 0) scaleY(1.05)
             }
-            /* animacion seccion vectores home */
-             :root {
-                --animate-duration: 1s;
-                --animate-delay: 1s;
-                --animate-repeat: 1
+            80% {
+                -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0) scaleY(.95);
+                transform: translateZ(0) scaleY(.95)
             }
-            @-webkit-keyframes bounce {
-                0%,
-                20%,
-                53%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    -webkit-transform: translateZ(0);
-                    transform: translateZ(0)
-                }
-                40%,
-                43% {
-                    -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-                    transform: translate3d(0, -30px, 0) scaleY(1.1)
-                }
-                70% {
-                    -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-                    transform: translate3d(0, -15px, 0) scaleY(1.05)
-                }
-                80% {
-                    -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    -webkit-transform: translateZ(0) scaleY(.95);
-                    transform: translateZ(0) scaleY(.95)
-                }
-                90% {
-                    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-                    transform: translate3d(0, -4px, 0) scaleY(1.02)
-                }
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+                transform: translate3d(0, -4px, 0) scaleY(1.02)
             }
-            @keyframes bounce {
-                0%,
-                20%,
-                53%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    -webkit-transform: translateZ(0);
-                    transform: translateZ(0)
-                }
-                40%,
-                43% {
-                    -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-                    transform: translate3d(0, -30px, 0) scaleY(1.1)
-                }
-                70% {
-                    -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    animation-timing-function: cubic-bezier(.755, .05, .855, .06);
-                    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-                    transform: translate3d(0, -15px, 0) scaleY(1.05)
-                }
-                80% {
-                    -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-                    -webkit-transform: translateZ(0) scaleY(.95);
-                    transform: translateZ(0) scaleY(.95)
-                }
-                90% {
-                    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-                    transform: translate3d(0, -4px, 0) scaleY(1.02)
-                }
+        }
+        
+        @keyframes bounce {
+            0%,
+            20%,
+            53%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
             }
-            .animate__animated {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-duration: var(--animate-duration);
-                animation-duration: var(--animate-duration);
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+                transform: translate3d(0, -30px, 0) scaleY(1.1)
             }
-            .animate__bounce_vector:hover {
-                -webkit-animation-name: bounce;
-                animation-name: bounce;
-                -webkit-transform-origin: center bottom;
-                transform-origin: center bottom;
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+                transform: translate3d(0, -15px, 0) scaleY(1.05)
             }
+            80% {
+                -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0) scaleY(.95);
+                transform: translateZ(0) scaleY(.95)
+            }
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+                transform: translate3d(0, -4px, 0) scaleY(1.02)
+            }
+        }
+        
+        .animate__animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-duration: var(--animate-duration);
+            animation-duration: var(--animate-duration);
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+        
+        .animate__bounce_vector:hover {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
         }
