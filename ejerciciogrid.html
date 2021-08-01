@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>merchicakes</title>
+    <link rel="shortcut icon" mtype="image/png" href="imagenes/cookies_vector.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="./ejerciciogrid.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- MENU-->
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light shadow-3 p-4">
+                <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+                <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+                <button class="btn btn-link btn-block m-0">Link 3</button>
+            </div>
+        </div>
+        <!-- quiero poner sticky en el menu y no puedo-->
+
+    </header>
+
+    <body>
+        <h1> NUESTRAS DELICIAS </h1>
+        <div class="galeria_fotos">
+            <div class="galeria_item"><img src="./imggrids/1.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/2.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/3.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/4.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/5.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/6.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/7.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/8.jpeg" alt="" class="galeria_img"></div>
+            <div class="galeria_item"><img src="./imggrids/9.jpeg" alt="" class="galeria_img"></div>
+        </div>
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+
+        <section id="mobile_formulario" class="section_formulario celdas">
+            <a name="quiero"></a>
+            <form class="formulario_caja">
+                <label for="PRODUCTOS">PRODUCTOS:</label>
+                <select name="productos">
+          <option value="cookies">cookies</option>
+          <option value="alfajores">alfajores</option>
+          <option value="minicakes">minicakes</option></select></div>
+
+
+                <label for="Cantidad"> CANTIDAD:</label>
+                <input type="number" name="Cantidad" placeholder="multipo de 6" />
+
+                <label for="Fecha_entrega"> FECHA ENTREGA:</label>
+                <input type="text" name="Fecha_entrega" placeholder="un dia anticipacion" />
+                <label for="Lugar_de_entrega"> LUGAR DE ENTREGA:</label>
+                <input type="text" name="Lugar_de_entrega" placeholder="solo barcelona ciudad" />
+
+                <label for="email"> EMAIL:</label>
+                <input type="email" name="email" />
+
+                <label for="numero_de_contacto"> NUMERO CONTACTO:</label>
+                <input type="text" name="nuemero_de_contacto" />
+
+                <div class="enviar_limpiar"> <input type="submit" value="enviar">
+                    <input type="reset" value="limpiar"></div>
+            </form>
+            <br />
+        </section>
+        <hr />
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.715412579367!2d2.189374515425571!3d41.38026737926476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3a9d5074615%3A0x7e11e3fb083f81e0!2sCarrer%20de%20l&#39;Almirall%20Barcel%C3%B3%2C%205%2C%2008003%20Barcelona!5e0!3m2!1ses-419!2ses!4v1623163086186!5m2!1ses-419!2ses"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!--footer-->
+
+        <footer>
+
+
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pages/productos.html">PRODUCTOS</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/productos.html#cookies">cookies</a></li>
+                            <li><a href="../pages/productos.html#alfajores">alfajores</a></li>
+                            <li><a href="../pages/productos.html#minicakes">minicakes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#quiero">QUIERO</a></li>
+                    <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="pages/recetas.html">RECETAS</a></li>
+
+
+
+                </ul>
+            </nav>
+
+            <section class="footer_redes">
+
+
+                <a href="https://www.facebook.com/Merchi.Cakeshop/?ref=py_c"> <img src="/imagenes/logo_redes-08.png" class="medidas_logoredes" />
+                </a>
+
+                <a href="https://instagram.com/merchi.cakeshop?utm_medium=copy_link"> <img src="/imagenes/logo_redes-09.png" class="medidas_logoredes" />
+                </a>
+                <a href="index.html"><img src="imagenes/logo_merchi3.png" class="medidas_logo" /></a>
+            </section>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+<section></section>
+<!-- slider/ carrousel-->
+
+<div class="carrousel_video">
+    <video class="banner-inicio" autoplay="autoplay" loop="loop" id="video_background" preload="auto">
+    <source src="/videos/mixkit-adding-candy-to-a-donut-21930-medium.mp4" type="video/mp4" />
+  </video>
+
+
+</div>
+</section>
