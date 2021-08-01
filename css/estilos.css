@@ -209,7 +209,6 @@
             padding: 30px;
             margin: 10px 5px;
         }
-        /* formulario */
         /* mapa */
         
         .map iframe {
@@ -603,6 +602,13 @@
             .galeria_vidriera {
                 display: flex;
                 flex-flow: column nowrap;
+            }
+        }
+        /* TITULO QUIERO  */
+        
+        @media only screen and (max-width: 500px) {
+            .TituloGeneralQuiero {
+                font-size: 30px;
             }
         }
         /* animacion seccion productos */
